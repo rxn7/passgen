@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-typedef unsigned long long u64;
+#include "rotalias.h"
 
 int
 main(int argc, const char* argv[]){
