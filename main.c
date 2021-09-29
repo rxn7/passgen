@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-<<<<<<< HEAD
 #include <string.h>
 
 typedef unsigned long long u64;
-=======
-#include "rotalias.h"
->>>>>>> b7b4489c3fe3cacf33173a548a0d3cfd313e0bd8
 
 int
 main(int argc, const char* argv[]){
