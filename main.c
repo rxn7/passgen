@@ -3,20 +3,24 @@
 #include <time.h>
 #include <string.h>
 
-typedef unsigned long long u64;
+__int32_t main(int argc, const char* argv[]){
+	/* Valid characters. */
+	const char* valid = "`~ABCDEFGHIJKLMNQOPRSTUWYZabcdefghijklmnqoprstuwyz1234567890!@#$%^&*()_-+={}[];:',.<>/?|'\"\\|";
+    	__uint32_t valid_length = strlen(valid);
 
-int main(int argc, const char* argv[]){
-    const char* valid = "`~ABCDEFGHIJKLMNQOPRSTUWYZabcdefghijklmnqoprstuwyz1234567890!@#$%^&*()_-+={}[];:',.<>/?|'\"\\|";
-    int valid_length = strlen(valid);
-
-	u64 length=20;
+	/* Default length will be 30. */
+	size_t length=30;
+	
+	/* If user has passed length as an argument... */
 	if(argc > 1){
+		/* ...use it instead. */
 		length = strtoull(argv[1], NULL, 0);
 	}
 
 	srand(time(0));
-	for(u64 i=0; i<length; i++){
-		printf("%c", valid[rand() % valid_length]);
+
+	for(size_t i=0; i < length; ++i){
+		putc(valid[rand() % valid_length], stdout);
 	}
 
 	return 0;
