@@ -5,9 +5,8 @@
 
 typedef unsigned long long u64;
 
-int
-main(int argc, const char* argv[]){
-	const char* valid = "ABCDEFGHIJKLMNQOPRSTUWYZabcdefghijklmnqoprstuwyz1234567890!@#$%^&*()_-+={}[];:',.<>/?|'";
+int main(int argc, const char* argv[]){
+    const char* valid = "`~ABCDEFGHIJKLMNQOPRSTUWYZabcdefghijklmnqoprstuwyz1234567890!@#$%^&*()_-+={}[];:',.<>/?|'\"\\|";
     int valid_length = strlen(valid);
 
 	u64 length=20;
