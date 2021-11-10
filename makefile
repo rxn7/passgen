@@ -1,5 +1,5 @@
 all: 
-	gcc main.c -o passgen -std=gnu99
+	gcc passgen.c -o passgen -std=gnu99
 
 install: 
 	make
