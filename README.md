@@ -6,5 +6,5 @@ Simple C password generator
 Clone the repo and run ./build.sh. That's it.
 
 # Usage
-passgen - will generate 20-char password.   
-passgen {num} - will generate password with specified length.
+```passgen``` generates password with the default length.   
+```passgen <num>``` generates password with specified length.
